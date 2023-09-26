@@ -13,5 +13,24 @@ class AppTheme {
   static ThemeData lightTheme = ThemeData(
       primaryColor: primarylightColor,
       scaffoldBackgroundColor: bgLightColor,
-      appBarTheme: AppBarTheme());
+      appBarTheme: AppBarTheme(
+          toolbarHeight: 130, elevation: 0, backgroundColor: primarylightColor),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          backgroundColor: Colors.transparent,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          selectedItemColor: primarylightColor,
+          unselectedItemColor: greyColor,
+          elevation: 0),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: primarylightColor,
+          shape: StadiumBorder(side: BorderSide(color: whiteColor, width: 4))),
+      textTheme: TextTheme(
+        displayLarge: TextStyle(
+            fontSize: 22, fontWeight: FontWeight.bold, color: whiteColor),
+        displaySmall: TextStyle(
+            fontSize: 18, fontWeight: FontWeight.bold, color: blackColor),
+        bodyLarge: TextStyle(
+            fontSize: 17, color: greyColor, fontWeight: FontWeight.bold),
+      ));
 }
