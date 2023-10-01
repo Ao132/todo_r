@@ -10,6 +10,8 @@ class AppTheme {
   static Color greyColor = const Color(0xff7D8490);
   static Color bgDarkColor = const Color(0xff060E1E);
   static Color blackDarkColor = const Color(0xff141922);
+  static Color editColor = const Color(0xFF0392CF);
+
   static ThemeData lightTheme = ThemeData(
       primaryColor: primarylightColor,
       scaffoldBackgroundColor: bgLightColor,

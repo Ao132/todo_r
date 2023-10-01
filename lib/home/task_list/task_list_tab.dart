@@ -17,10 +17,10 @@ class TaskListTab extends StatelessWidget {
     return Column(
       children: [
         CalendarTimeline(
-          initialDate: DateTime.now(),
+          initialDate: listProvider.selectedDate,
           firstDate: DateTime.now().subtract(const Duration(days: 365)),
           lastDate: DateTime.now().add(const Duration(days: 365)),
-          onDateSelected: (date) => {},
+          onDateSelected: (date) => listProvider.setNewSelectedDate(date),
           leftMargin: 20,
           monthColor: AppTheme.blackColor,
           dayColor: AppTheme.blackColor,
